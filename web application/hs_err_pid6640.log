@@ -1,0 +1,226 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x6d802f09, pid=6640, tid=4448
+#
+# JRE version: 6.0_17-b04
+# Java VM: Java HotSpot(TM) Client VM (14.3-b01 mixed mode windows-x86 )
+# Problematic frame:
+# V  [jvm.dll+0x2f09]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01947400):  VMThread [stack: 0x003b0000,0x00400000] [id=4448]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xfbd70013
+
+Registers:
+EAX=0xfbd7000f, EBX=0x018d3948, ECX=0x07f457f8, EDX=0x07f457f8
+ESP=0x003ff728, EBP=0x003ff72c, ESI=0xfbd7000f, EDI=0x07f457f8
+EIP=0x6d802f09, EFLAGS=0x00010286
+
+Top of Stack: (sp=0x003ff728)
+0x003ff728:   07f457f8 003ff73c 6d802efc fbd7000f
+0x003ff738:   6d9a3692 003ff754 6d81fb2b 07f457f8
+0x003ff748:   003ff7a4 003ff7a4 008dfcf0 003ff760
+0x003ff758:   6d881dbb 07f45847 003ff770 6d8cc7f3
+0x003ff768:   07f45847 018d3710 003ff77c 6d8cc5a3
+0x003ff778:   018d3908 003ff794 6d881e34 003ff7a4
+0x003ff788:   00000000 008dfd48 07f45847 003ff7b0
+0x003ff798:   6d8cc395 003ff7a4 00000000 6da0f2e8 
+
+Instructions: (pc=0x6d802f09)
+0x6d802ef9:   00 00 00 c3 cc cc cc 55 8b ec 56 8b 75 08 8b d1
+0x6d802f09:   8b 4e 04 8b c1 c1 f8 02 85 c9 89 4d 08 7f 2c 7d 
+
+
+Stack: [0x003b0000,0x00400000],  sp=0x003ff728,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x2f09]
+V  [jvm.dll+0x2efc]
+V  [jvm.dll+0x1fb2b]
+V  [jvm.dll+0x81dbb]
+V  [jvm.dll+0xcc7f3]
+V  [jvm.dll+0xcc5a3]
+V  [jvm.dll+0x81e34]
+V  [jvm.dll+0xcc395]
+V  [jvm.dll+0xc6f47]
+V  [jvm.dll+0x15f7a5]
+V  [jvm.dll+0x203f5]
+V  [jvm.dll+0xc93d6]
+V  [jvm.dll+0xcc165]
+V  [jvm.dll+0x16dbfb]
+V  [jvm.dll+0x16de8d]
+V  [jvm.dll+0x16e0d3]
+V  [jvm.dll+0x16e174]
+V  [jvm.dll+0xd6a56]
+V  [jvm.dll+0x15fbd4]
+V  [jvm.dll+0xb21e9]
+V  [jvm.dll+0xb2302]
+V  [jvm.dll+0x1ce0e5]
+V  [jvm.dll+0x1ce4ba]
+V  [jvm.dll+0x196364]
+V  [jvm.dll+0xc69ff]
+V  [jvm.dll+0xc87de]
+V  [jvm.dll+0xc89cb]
+V  [jvm.dll+0xcc99a]
+V  [jvm.dll+0x1cb112]
+V  [jvm.dll+0xc79f5]
+V  [jvm.dll+0x7d50b]
+V  [jvm.dll+0x1e6b0b]
+V  [jvm.dll+0x1e9293]
+V  [jvm.dll+0x1e852e]
+V  [jvm.dll+0x1e887c]
+V  [jvm.dll+0x1e8ca2]
+V  [jvm.dll+0x173e4c]
+C  [msvcr71.dll+0x9565]
+C  [kernel32.dll+0x4d0e9]
+C  [ntdll.dll+0x419bb]
+C  [ntdll.dll+0x4198e]
+
+VM_Operation (0x018bf424): GenCollectForAllocation, mode: safepoint, requested by thread 0x008db000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0c67f800 JavaThread "����$��衵鼑촳ь움ߙ瞈ђ����}������쵋ь움ߙ碐ђ������贸㋀쵣ь움ߙ磘ђ����#������쵻ь움ߙ礰ђ����
+��脃享춓ь움ߙ祐ђ����f������춫ь움ߙ稨ђ����
+��脂享췃ь움ߙ穈ђ����������췛ь움ߙ穸ђ����
+��脅享췳ь움ߙ窘ђ����������츋ь움ߙ章ђ����
+��脄享츣ь움ߙ笀ђ����i������츻ь움ߙ篠ђ����
+��脇享칓ь움ߙ簀ђ����������칫ь움ߙ簰ђ����
+��脆享캃ь움ߙ籐ђ����"������캛ь움ߙ粠ђ������뎡캳ь움ߙ糈ђ����?������컋ь움ߙ絘ђ����3��㊈䶬컣ь움ߙ緐ђ����Ę������컻ь움ߙ耐ђ���������酇켓ь움ߙ聘ђ����y������켫ь䙀ߡ澂腘ђ腰ђ����콃ь움ߙ膈ђ����+��ኻꐦ콛ь움ߙ臰ђ����e������콳ь움ߙ苈ђ����%��툗릫쾋ь움ߙ茠ђ����T������쾣ь움ߙ菘ђ����-��ೇප쾻ь움ߙ葀ђ����^������쿓ь움ߙ蔈ђ����&��ꆿ澻쿫ь움ߙ蕠ђ����������퀃ь움ߙ虸ђ����&��潱퀛ь움ߙ蛐ђ����K������퀳ь움ߙ蝸ђ������뎺큋ь움ߙ螠ђ����������큣ь움ߙ蟠ђ������뎼큻ь움ߙ蠈ђ����C������킓ь움ߙ袠ђ������뎽킫ь움ߙ裈ђ����8������탃ь움ߙ襈ђ������뚙탛ь움ߙ覐ђ����������탳ь움ߙ觀ђ����*��ල⢽턋ь움ߙ訠ђ����U������턣ь움ߙ諘ђ������뎁턻ь움ߙ謀ђ����)������텓ь움ߙ譠ђ����2��फ़㋞텫ь움ߙ诐ђ����§������톃ь움ߙ贰ђ����/��艶퓓톛ь움ߙ趠ђ���� ������톳ь䙀ߡ控䌉跰ђ踈ђ踠ђ퇋ь움ߙ踸ђ����1��퇣ь움ߙ躨ђ����.������퇻ь움ߙ輐ђ����"��툓ь움ߙ轠ђ����.������툫ь움ߙ迈ђ������㧡㻴퉃ь움ߙ迸ђ����1������퉛ь움ߙ遨ђ���� ��쾿퉳ь움ߙ邸ђ����������튋ь䙀ߡθ郠ђ郸ђ����튣ь움ߙ鄐ђ������挓䍖튻ь움ߙ酐ђ����&������틓ь움ߙ醨ђ������挒䍖틫ь움ߙ釨ђ����������팃ь움ߙ鈨ђ����.��耄덥팛ь움ߙ銐ђ����V������팳ь움ߙ鍈ђ����.��䵬㈚퍋ь움ߙ鎰ђ���� ������퍣ь움ߙ鐀ђ����2��ಫ묌퍻ь움ߙ鑰ђ����ā������펓ь움ߙ隀ђ������삎ꈁ펫ь움ߙ隸ђ����/������폃ь움ߙ霨ђ����,��㌚┧폛ь움ߙ鞐ђ����������폳ь움ߙ韘ђ��� daemon [_thread_blocked, id=6020, stack(0x0c130000,0x0c180000)]
+  0x019a4400 JavaThread "�� ������ᇸߙ屠ߙߴ������������������������ߴ屠ߙ鋘ߴ����껸ߴ
+�� ����������������������������ߴߴᇸߙᇸߙߴߴ������������������������ߴ��������뺰ߡ��������������������������������Ā��1��뀀������������������������⼨హ��������������������������������������嬸ߙ嗐ߙ困ߙ器ߙ垨ߙ����������������팻ߴ榈ߚߴ������������������������������������������������������������������������������������펛ߴনߙ��
+����펳ߴྀߙ��ߴ떴ߴ����瀀떴ߴ��瀀떴ߴ��瀀·呀ߙ����肀퐃ߴ움ߙߴ����	������퐛ߴшߙ	��localhost��퐻ߴ움ߙߴ����������푓ߴшߙ��Stream closed��푻ߴ움ߙߴ����������풓ߴшߙ��jar:����풫ߴ༈ߙߴߴߴ����P����������㦈ߙ㦘ߙ刘ߙ㥸ߙ⤰ߙ᪘ߙᱰߙ᪨ߙᩨߙ䆰ߙ멠ߛ瑐ߜ䕐߰鋐ߚ鍸߫鎐߫횐߱ᰀ߯鐘߫匘ߙ巨ߝ鐠ߚ⃈ߙ쌀ߥธߢ骨ߚ髈ߚ鱰߯䟠߰䴈ߤߴ㆘߰㠐߰⃈ߙ噈߱ퟀ߰߱髈ߚ欘߰ߴ㠨߰輘߰癈߰鰨ߚ鷈ߚ預߫鹨ߚ颈߫郐߰䦘߰䭈߰䶰߰一߰ 
+!)*+./01234(6(7(8(9#:#<#=$>$?%;'@'A鼈߯혋ߴࡐߙP��Āāāāāāāāāāāāāāāāāݤ܇ݤćāāāāāāఌఌఌఌఌఌऌउਉਊਊਊĊ����홫ߴɘߙ	慶⑬湥牴y����횃ߴনߙ��တ 
+������တ!)������တ*������တ+����������훋ߴႀߙ	��ߴߴߴߴߴߴߴߴߴ훻ߴธߙ㌼œ����ߴ����ᇨߙ��ÿ5��������⬪ε⨀딬��⴪Ƶ⨀Йʵ⨀ষ넀������흋ߴචߙߴߴ������������￾￿ȁ������׵����톐Ǚ䠠ƕﵠǪﲈǪ牀ǝ����힛ߴธߙŘ������ߴ����ᇨߙ��ÿ������됪��°��ퟓߴචߙߴߴ���������������������������Ǚ⍸ƍ쨇Ǜ�������Ǚ�������ߴธߙŘ������ߴ����ᇨߙ��ÿ-������됪°�����ߴචߙߴߴ��������������������!�������Ǚ⍸ƍ쨇Ǜ�������Ǚ�������ߴธߙŘ������ߴ����ᇨߙ��ÿ-������됪સ뀀���ߴචߙߴߴ������������ȁ������׭����톐Ǚ⍸ƍ㲠ǫ㯈ǫ지Ǜ�������ߴธߙŘ������ߴ����ᇨߙ��˿,������됪ஸ⨀ʴ똀°����"���ߴචߙߴߴ� daemon [_thread_blocked, id=4860, stack(0x0bf40000,0x0bf90000)]
+  0x019a0400 JavaThread "픎˥䲎픎˴䲁픎˷䲊픎˺鱂픎˽鰼픏ȍ鰺픏ȓ鱜픏Ȗ䲃픏ș䴂픏Ȝ玂픏Ȣ獿픏ȥ飋픏ȱ玁픏Ɇ玀픏ɉ觽픏ɒ觻픏ɘ蠭픏ɡ贕픏ɧ䶱픏ɪ譿픏ɰ讃픏ɳ䜟픏ɶ讀픏ɹ讀픏ɹ䜡픏ʋ讉픏ʠ讄픏ʣ䜠픏ʸ譾픏ˇ讅픏ˍ奱픏˖㘘픏˙㡩픏˜巒픏˟彎픏˥孿픏˨孌픏ˮ瓤픏˺髝픐ȟ顫픐ȥ鷓픐Ȯ䳸픐Ƚ廲픐ɀ亹픐ɉ癭픐ɛ癬픐ɧ䘇픐ɭ鷛픐ɶ䴩픐ɿ麞픐ʅ頀픐ʎ聾픐ʝ聾픐ʝ龔픐ʠ蠪픐ʦ襲픐ʬ竸픐ˁ䪰픐˄鷟픐˥饔픐ˮ䍽픐˴鷩픑ȱ鱉픑ȴ㸎픑Ⱥ爡픑Ƚ爜픑Ɇ爠픑ɉ爞픑ɕ灘픑ɧ㶚픑ɹ灑픑ɼ灗픑ʅ灔픑ʈ灒픑ʑ灖픑ʬ㶛픑ʸ㶙픑ˁ㦬픑˖㦫픑˙戂픑˟䨈픑ˮ覾픒ȍ竊픒ȓ䇁픒Ȗ襶픒ȴ䙮픒Ƚ䙬픒ɀ襴픒Ƀ襷픒Ɇ襳픒Ɍ䙭픒ɒ禵픒ɡ鷵픒ʅ瓕픒ʝ鬻픒ʦ䪝픒ʬ韣픒ʵ䪜픒ˁ蠥픒˟糱픒ˢ孋픒˫孍픒˴㜺픒˺孊픓Ȑ鷚픓ȥ䘅픓Ȩ轡픓Ƀ䌫픓ɉ纒픓Ɍ纑픓ɞ䌪픓ɡ䌬픓ɶ㼈혂Ȯ瓚혂ȱ鼇혂Ⱥ䰒혂Ƀ鬞혂ɏ鬟혂ɕ鬠혂ɡ䴃혂ɳ驖혂ʂ䮹혂ʎ驜혂ʔ驛혂ʝ䮷혂ʦ驗혂ʯ驙혂ʸ驌혂˄䟐혂ˍ趱혂˓㩵혂ˢ䴅혂˥攩혂˨攫혂˫㩶혃ș攥혃Ȝ攪혃Ȣ㩷혃Ȩ攨혃Ȯ鷧혃ȴ魗혃Ɍ毊혃ɒ囏혃ɹ㸐혃ʅ戁혃ʈ韈혃ʎ韅혃ʠ鷰혃ʵ䵐혃ʻ䕽혃˜虄혃˟颧혃˨躠현ȍ虅현ȓ虃현Ȩ虇현ȱ㰙현Ⱥ欐현ɒ欕현ɞ欏현ɡ欑현ɧ㰜현ʔ轣현ʬ轤현ʲ覉현ˢ鷣현˨䊲현˫醼현˱黳혅ș靨혅ȥ魘혅Ȩ饜혅ȫ䩏혅Ɇ奲혅ɡ鷢혅ɪ鷯혅ɭ㱻혅ɿ靆혅ʋ顬혅ʔ䰰혅ʗ靁혅ʠ䨵혅ʲ䶞혅˖齱혅˙齰혅˜齮혅˨齯혅˽齭혆Ȑ䶟혆Ȗ䴝혆Ȯ䪥혆Ⱥ贙혆Ɍ䴆혆ɏ㬮혆ɪ䂂혆ɳ䢲혆ɶ鷪혆ɹ曬혆ʂ䞋혆ʎ贚혆ʑ䵻혆ʗ囒혆ʚ鷴혆ʠ鷼혆ʩ鷳혆ʻ曮혆˄曪혆ˇ㬯혆ˍ顯혆˓䠭혆˥躙혆˷躜혆˽躘혇ȓ䠮혇Ȗ壨혇Ȝ㽯혇ȥ蠸혇ȴ蠮혇ȷ蠳혇Ɇ蠱혇Ɍ䘊혇ɒ䘋혇ɘ蠰혇ɪ囐혇ɹ鷤혇ʋ鷶혇ʯ䍦혇ʸ巘혇ʻ巚혇ʾ䵰혇˜黲혇˺䯦혇˽䯥혈Ȑ髖혈Ȝ髕혈ȟ鷡혈ȫ罐혈Ȯ㹛혈Ƀ馪혈ɞ䵛혈ɧ鷮혈ɿ䉵혈ʩ籣혈ʬ籞혈ˁ籦혈˄籥혈ˇ籢혈ˊ籨혈 [_thread_blocked, id=8108, stack(0x0bef0000,0x0bf40000)]
+  0x01995400 JavaThread " ��(������ᇸߙ屠ߙ꘸ߛ눘ߛ줨ߛ����������������쪠ߛ눘ߛᙸߙ����������0����������紌⬥Ħ����(������붘ߛ죘ߛᇸߙᇸߙ뵀ߛ띸ߛ������������������������쬀ߛ����������������������������������������Ā��1��뀀	������䋈ల����稸౒����╨హ��������������������������������������嬸ߙ嗐ߙ困ߙ器ߙ垨ߙꀸߛꃀߛꈨߛꆘߛ������������퀠ШǀϨШ������榈ߚ줨ߛ��������������������������������������������������������������������������������������নߙ��<����=����>����?;
+������༈ߙ틨ߛ蠰ߠᜀߜ����ǥ����������ꄠ䈿ːߙ퓠ߛ헸ߛڰࠂ호ߛ᭸ߛ뀘ߠ勨ߙ���ߛ���ߛ勀ߙːߙ㦈ߙ㦘ߙ刘ߙ㥸ߙ㦨ߙ暘ߙ㦸ߙ剠ߙ䜠ߙ㬘ߙ㬸ߙ㭸ߙ貈ߚ䉐ߙ퓠ߛ⥀ߙ⤰ߙ᪘ߙ᪀ߙ᭐ߙ퓰ߛ᪨ߙ���ߙ픐ߛ㪈ߙᩨߙ㪘ߙ䅰ߙ픸ߛ핐ߛ함ߛ햐ߛᮠߙ햨ߛ허ߛᮈߙ헸ߛ혐ߛ혠ߛ호ߛ㪸ߙиߙ᭸ߛ홐ߛ⩈ߙ홨ߛ匰ߙ횀ߛ횘ߛ횰ߛ훈ߛ軘ߚ훠ߛߙⶨߙ훸ߛ휘ߛ㈘ߙㆰߙ⧰ߙ휸ߛ흨ߛ⮨ߙߙ彠ߛ힀ߛ⨀ߙ힘ߛ퟈ߛ⨸ߙⰨߙퟠߛߙ⿠ߙ���ߛ���ߛ���ߛ���ߛ���ߛ匘ߙ���ߛߙᥐߛ���ߛߚ���ߛ���ߛ⧠ߙ���ߛ���ߛⷈߙߚ���ߛ���ߛ���ߛ���ߛߙ���ߛ���ߛ㈀ߙᏐߙ፠ߙ₀ߙ᷐ߙḰߙỨߙ⋰ߙᾸߙበߙ���ߛߚߙ␀ߙአߙ劈ߙቀߙዠߙ���ߛ���ߛ���ߛᎰߙጀߙ���ߛ���ߛߙᥰߙߙ���ߛ⦠ߙ勨ߙ⼰ߙ���ߛ���ߛ⼘ߙ⥰ߙ⦰ߙⰸߙ净ߙߚ���ߛ���ߛ⨨ߙ���ߛ鳰ߛ���ߛ���ߛ鴈ߛ���ߛ���ߛ���ߛ���ߛ⸸ߙ鴠ߛ���ߛ⧈ߙ���ߛ���ߛ���ߛ���ߛ���ߛ���ߛ髨ߚ���ߛߙ���ߛ���ߛ���ߛ���ߛ���ߛ���ߛ���ߛ⨐ߙ���ߛ⹐ߙ勀ߙ灐ߙ刀ߙ���ߛ⮈ߙ���ߛ煨ߙ⸈ߙ���ߛ����
+��Ꮠߙ፠ߙ₀ߙ᷐ߙḰߙɨ߽⋰ߙᾸߙ屠ߙ���ߛ가ߠߙ옘ߞ움ߙ먈ߤመߛᜀߜ���ߛ���ߛ���ߛᎰߙ䖠ߜ䧈ߦ���ߛ姨ߡᥰߙߙ���ߠ髨ߚ���ߛߙ䅈ߙ熀ߙ���ߛߙ䡈ߙ䂘ߙ���ߛ䃘ߙ���ߛ០ߛ䀨ߙ���ߛ���ߛ㽨ߙ㰀ߙ㱀ߙ㼠ߙ鴠ߚﭸߙ㫘ߙ밐ߛﰨߙᥨߛ瓐ߙᮈߛ䉠ߙ���ߛ㴨ߙ���ߛ���ߛ���ߛ���ߛ���ߛߚ慘ߛＰߙ￘ߙ���ߛ˸ߚΘߚ㵈ߙ���ߛߛ㶀ߙ區ߙߛ㳰ߙ㷨ߙߛߛߛ'¶'º'¦)¹)¼)J7©7­78EèA*µê% daemon [_thread_in_native, id=7940, stack(0x0be50000,0x0bea0000)]
+  0x01994000 JavaThread "븨Ш뮘Ш����뀫ШߴꟀШ뮰Ш빀Ш����뷀Шð����1.0������끃Ш줨ߛ鱰Ш퀠Ш��������빘Ш밈Ш끣Шߴ岨Ш볨Ш볨Ш����끻ШߴꗠШ빸Ш봀Ш����낓ШߴꌨШ봘Ш뺐Ш����낫Шߴ뉀Ш뺨Ш뵸Ш����냃Шߴ꟰Ш붐Ш뻀Ш����냛Ш줨ߛЧ퀠Ш��������뻘Ш뷀Ш냻ШߴꘐШ뻸Ш뷸Ш����넓ШߴꕨШ븐Ш뼐Ш����넫ШߴꚠШ뼨Ш븨Ш����녃ШߴꝈШ빀Ш뽀Ш����녛Ш줨ߛ鱐Ш퀠Ш��������뽘Ш빘Ш녻ШߴꖰШ뽸Ш빸Ш����놓ШߴꎠШ뺐Ш뾐Ш����놫Шߴ두Ш뽀Ш뺨Ш����뇃ШߴꝸШ뻀Ш뼨Ш����뇛Ш줨ߛЧ퀠Ш��������뾨Ш뻘Ш뇻Шߴ낀Ш뿈Ш뻸Ш����눓Шߴ꽘Ш뼐Ш뿠Ш����눫Ш줨ߛ鰰Ш퀠Ш��������뿸Ш뽘Ш뉋ШߴꔸШ쀘Ш뽸Ш����뉣ШߴꍘШ뾐Ш쀰Ш����뉻Ш줨ߛЧ퀠Ш��������쁈Ш뾨Ш늛ШߴꏐШ쁨Ш뿈Ш����늳Шߴ꒨Ш뿠Ш삀Ш����닋Ш줨ߛ鰐Ш퀠Ш��������삘Ш뿸Ш닫Шߴ릠Ш삸Ш쀘Ш����댃ШߴꔈШ쀰Ш샐Ш����댛Ш줨ߛЧ퀠Ш��������샨Ш쁈Ш댻Шߴ꫐Ш섈Ш쁨Ш����덓ШߴꙘШ삀Ш섈Ш����덫Ш줨ߛ鯰Ш퀠Ш��������선Ш삘Ш뎋ШߴꓘШ샐Ш삸Ш����뎣Ш줨ߛЧ퀠Ш��������셀Ш샨Ш돃Ш줨ߛ鯐Ш퀠Ш��������셠Ш선Ш돣Ш줨ߛЧ퀠Ш��������솠Ш셀Ш솠Ш����Ш솀Ш����솀Ш솀Ш됃Ш줨ߛЧ퀠Ш��������쇠Ш셠Ш쇠Ш��������n������������됣Ш줨ߛ髀Ш퀠Ш��������쌸Ш솠Ш쌸Ш8��K��讅ੁ僂䐌㧷ចꍨ潛ޠ㽰䄦���셿䯣䛩徐̗볃圷旤筑㝷㋋狸鰾⏺偙봻鈣Ἴᡫ礁埚췥巼ﵸ貿됥ᅀ狕受ᑔꕿ楘ꍹ퓋쮾顸≣ú����������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������������둃Ш줨ߛЧ퀠Ш��������썘Ш쇠Ш둣Ш줨ߛ骠Ш퀠Ш��������썸Ш쌸Ш뒃Ш줨ߛЧ퀠Ш��������쎘Ш썘Ш뒣Ш줨ߛ骀Ш퀠Ш��������쎸Ш썸Ш듃Ш줨ߛЧ퀠Ш��������쏘Ш쎘Ш듣Ш줨ߛ驠Ш퀠Ш��������쏸Ш쎸Ш딃Ш줨ߛЧ퀠Ш��������쐸Ш쏘Ш� daemon [_thread_blocked, id=4392, stack(0x0be00000,0x0be50000)]
+  0x01992400 JavaThread "�� ������ᇸߙ屠ߙߴ������������������������ߴ屠ߙ鋘ߴ����껸ߴ
+�� ����������������������������ߴߴᇸߙᇸߙߴߴ������������������������ߴ��������뺰ߡ��������������������������������Ā��1��뀀������������������������⼨హ��������������������������������������嬸ߙ嗐ߙ困ߙ器ߙ垨ߙ����������������팻ߴ榈ߚߴ������������������������������������������������������������������������������������펛ߴনߙ��
+����펳ߴྀߙ��ߴ떴ߴ����瀀떴ߴ��瀀떴ߴ��瀀·呀ߙ����肀퐃ߴ움ߙߴ����	������퐛ߴшߙ	��localhost��퐻ߴ움ߙߴ����������푓ߴшߙ��Stream closed��푻ߴ움ߙߴ����������풓ߴшߙ��jar:����풫ߴ༈ߙߴߴߴ����P����������㦈ߙ㦘ߙ刘ߙ㥸ߙ⤰ߙ᪘ߙᱰߙ᪨ߙᩨߙ䆰ߙ멠ߛ瑐ߜ䕐߰鋐ߚ鍸߫鎐߫횐߱ᰀ߯鐘߫匘ߙ巨ߝ鐠ߚ⃈ߙ쌀ߥธߢ骨ߚ髈ߚ鱰߯䟠߰䴈ߤߴ㆘߰㠐߰⃈ߙ噈߱ퟀ߰߱髈ߚ欘߰ߴ㠨߰輘߰癈߰鰨ߚ鷈ߚ預߫鹨ߚ颈߫郐߰䦘߰䭈߰䶰߰一߰ 
+!)*+./01234(6(7(8(9#:#<#=$>$?%;'@'A鼈߯혋ߴࡐߙP��Āāāāāāāāāāāāāāāāāݤ܇ݤćāāāāāāఌఌఌఌఌఌऌउਉਊਊਊĊ����홫ߴɘߙ	慶⑬湥牴y����횃ߴনߙ��တ 
+������တ!)������တ*������တ+����������훋ߴႀߙ	��ߴߴߴߴߴߴߴߴߴ훻ߴธߙ㌼œ����ߴ����ᇨߙ��ÿ5��������⬪ε⨀딬��⴪Ƶ⨀Йʵ⨀ষ넀������흋ߴචߙߴߴ������������￾￿ȁ������׵����톐Ǚ䠠ƕﵠǪﲈǪ牀ǝ����힛ߴธߙŘ������ߴ����ᇨߙ��ÿ������됪��°��ퟓߴචߙߴߴ���������������������������Ǚ⍸ƍ쨇Ǜ�������Ǚ�������ߴธߙŘ������ߴ����ᇨߙ��ÿ-������됪°�����ߴචߙߴߴ��������������������!�������Ǚ⍸ƍ쨇Ǜ�������Ǚ�������ߴธߙŘ������ߴ����ᇨߙ��ÿ-������됪સ뀀���ߴචߙߴߴ������������ȁ������׭����톐Ǚ⍸ƍ㲠ǫ㯈ǫ지Ǜ�������ߴธߙŘ������ߴ����ᇨߙ��˿,������됪ஸ⨀ʴ똀°����"���ߴචߙߴߴ� daemon [_thread_blocked, id=6912, stack(0x01cd0000,0x01d20000)]
+  0x01985800 JavaThread "Unknown thread" daemon [_thread_blocked, id=2540, stack(0x01c80000,0x01cd0000)]
+  0x0197ac00 JavaThread "�� ������ᇸߙ屠ߙߴ������������������������ߴ屠ߙ鋘ߴ����껸ߴ
+�� ����������������������������ߴߴᇸߙᇸߙߴߴ������������������������ߴ��������뺰ߡ��������������������������������Ā��1��뀀������������������������⼨హ��������������������������������������嬸ߙ嗐ߙ困ߙ器ߙ垨ߙ����������������팻ߴ榈ߚߴ������������������������������������������������������������������������������������펛ߴনߙ��
+����펳ߴྀߙ��ߴ떴ߴ����瀀떴ߴ��瀀떴ߴ��瀀·呀ߙ����肀퐃ߴ움ߙߴ����	������퐛ߴшߙ	��localhost��퐻ߴ움ߙߴ����������푓ߴшߙ��Stream closed��푻ߴ움ߙߴ����������풓ߴшߙ��jar:����풫ߴ༈ߙߴߴߴ����P����������㦈ߙ㦘ߙ刘ߙ㥸ߙ⤰ߙ᪘ߙᱰߙ᪨ߙᩨߙ䆰ߙ멠ߛ瑐ߜ䕐߰鋐ߚ鍸߫鎐߫횐߱ᰀ߯鐘߫匘ߙ巨ߝ鐠ߚ⃈ߙ쌀ߥธߢ骨ߚ髈ߚ鱰߯䟠߰䴈ߤߴ㆘߰㠐߰⃈ߙ噈߱ퟀ߰߱髈ߚ欘߰ߴ㠨߰輘߰癈߰鰨ߚ鷈ߚ預߫鹨ߚ颈߫郐߰䦘߰䭈߰䶰߰一߰ 
+!)*+./01234(6(7(8(9#:#<#=$>$?%;'@'A鼈߯혋ߴࡐߙP��Āāāāāāāāāāāāāāāāāݤ܇ݤćāāāāāāఌఌఌఌఌఌऌउਉਊਊਊĊ����홫ߴɘߙ	慶⑬湥牴y����횃ߴনߙ��တ 
+������တ!)������တ*������တ+����������훋ߴႀߙ	��ߴߴߴߴߴߴߴߴߴ훻ߴธߙ㌼œ����ߴ����ᇨߙ��ÿ5��������⬪ε⨀딬��⴪Ƶ⨀Йʵ⨀ষ넀������흋ߴචߙߴߴ������������￾￿ȁ������׵����톐Ǚ䠠ƕﵠǪﲈǪ牀ǝ����힛ߴธߙŘ������ߴ����ᇨߙ��ÿ������됪��°��ퟓߴචߙߴߴ���������������������������Ǚ⍸ƍ쨇Ǜ�������Ǚ�������ߴธߙŘ������ߴ����ᇨߙ��ÿ-������됪°�����ߴචߙߴߴ��������������������!�������Ǚ⍸ƍ쨇Ǜ�������Ǚ�������ߴธߙŘ������ߴ����ᇨߙ��ÿ-������됪સ뀀���ߴචߙߴߴ������������ȁ������׭����톐Ǚ⍸ƍ㲠ǫ㯈ǫ지Ǜ�������ߴธߙŘ������ߴ����ᇨߙ��˿,������됪ஸ⨀ʴ똀°����"���ߴචߙߴߴ� daemon [_thread_blocked, id=6148, stack(0x01c30000,0x01c80000)]
+  0x0194ec00 JavaThread "" [_thread_blocked, id=7968, stack(0x01be0000,0x01c30000)]
+  0x0194a400 JavaThread "Unknown thread" daemon [_thread_blocked, id=8144, stack(0x01b40000,0x01b90000)]
+  0x008db000 JavaThread "main" [_thread_blocked, id=6652, stack(0x01870000,0x018c0000)]
+
+Other Threads:
+=>0x01947400 VMThread [stack: 0x003b0000,0x00400000] [id=4448]
+  0x019adc00 WatcherThread [stack: 0x0c0e0000,0x0c130000] [id=6828]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x008d8b88] Threads_lock - owner thread: 0x01947400
+[0x008d8f98] Heap_lock - owner thread: 0x008db000
+
+Heap
+ def new generation   total 960K, used 51K [0x03d90000, 0x03e90000, 0x04270000)
+  eden space 896K,   0% used [0x03d90000, 0x03d90000, 0x03e70000)
+  from space 64K,  81% used [0x03e80000, 0x03e8cf88, 0x03e90000)
+  to   space 64K,   0% used [0x03e70000, 0x03e70000, 0x03e80000)
+ tenured generation   total 8732K, used 8654K [0x04270000, 0x04af7000, 0x07d90000)
+   the space 8732K,  99% used [0x04270000, 0x04ae3a48, 0x0476c200, 0x04af7000)
+ compacting perm gen  total 13056K, used 12841K [0x07d90000, 0x08a50000, 0x0bd90000)
+   the space 13056K,  98% used [0x07d90000, 0x08a1a7f0, 0x08a0a600, 0x08a50000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	C:\Program Files\Java\jre6\bin\javaw.exe
+0x777c0000 - 0x778e7000 	C:\Windows\system32\ntdll.dll
+0x76dd0000 - 0x76eac000 	C:\Windows\system32\kernel32.dll
+0x76a60000 - 0x76b26000 	C:\Windows\system32\ADVAPI32.dll
+0x77490000 - 0x77553000 	C:\Windows\system32\RPCRT4.dll
+0x76d30000 - 0x76dcd000 	C:\Windows\system32\USER32.dll
+0x77960000 - 0x779ab000 	C:\Windows\system32\GDI32.dll
+0x779b0000 - 0x779ce000 	C:\Windows\system32\IMM32.DLL
+0x776f0000 - 0x777b8000 	C:\Windows\system32\MSCTF.dll
+0x770a0000 - 0x7714a000 	C:\Windows\system32\msvcrt.dll
+0x77910000 - 0x77919000 	C:\Windows\system32\LPK.DLL
+0x76cb0000 - 0x76d2d000 	C:\Windows\system32\USP10.dll
+0x6c1b0000 - 0x6c1b5000 	C:\Windows\system32\AVGRSSTX.DLL
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre6\bin\msvcr71.dll
+0x6d800000 - 0x6da8b000 	C:\Program Files\Java\jre6\bin\client\jvm.dll
+0x74480000 - 0x744b2000 	C:\Windows\system32\WINMM.dll
+0x76b60000 - 0x76ca5000 	C:\Windows\system32\ole32.dll
+0x77290000 - 0x7731d000 	C:\Windows\system32\OLEAUT32.dll
+0x74440000 - 0x7447d000 	C:\Windows\system32\OLEACC.dll
+0x75ca0000 - 0x75ccc000 	C:\Windows\system32\apphelp.dll
+0x6d7b0000 - 0x6d7bc000 	C:\Program Files\Java\jre6\bin\verify.dll
+0x6d330000 - 0x6d34f000 	C:\Program Files\Java\jre6\bin\java.dll
+0x6d290000 - 0x6d298000 	C:\Program Files\Java\jre6\bin\hpi.dll
+0x778f0000 - 0x778f7000 	C:\Windows\system32\PSAPI.DLL
+0x6d380000 - 0x6d3a9000 	C:\Program Files\Java\jre6\bin\jdwp.dll
+0x6d6a0000 - 0x6d6a6000 	C:\Program Files\Java\jre6\bin\npt.dll
+0x6d7f0000 - 0x6d7ff000 	C:\Program Files\Java\jre6\bin\zip.dll
+0x6d200000 - 0x6d207000 	C:\Program Files\Java\jre6\bin\dt_socket.dll
+0x77920000 - 0x7794d000 	C:\Windows\system32\WS2_32.dll
+0x77900000 - 0x77906000 	C:\Windows\system32\NSI.dll
+0x74790000 - 0x7479f000 	C:\Windows\system32\NLAapi.dll
+0x755f0000 - 0x75609000 	C:\Windows\system32\IPHLPAPI.DLL
+0x753f0000 - 0x75425000 	C:\Windows\system32\dhcpcsvc.DLL
+0x756d0000 - 0x756fc000 	C:\Windows\system32\DNSAPI.dll
+0x75d00000 - 0x75d14000 	C:\Windows\system32\Secur32.dll
+0x755e0000 - 0x755e7000 	C:\Windows\system32\WINNSI.DLL
+0x753c0000 - 0x753e2000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x72130000 - 0x7213f000 	C:\Windows\system32\napinsp.dll
+0x72010000 - 0x72022000 	C:\Windows\system32\pnrpnsp.dll
+0x71ff0000 - 0x71ffc000 	C:\Windows\system32\wshbth.dll
+0x77560000 - 0x776ea000 	C:\Windows\system32\SETUPAPI.dll
+0x16080000 - 0x160a5000 	C:\Program Files\Bonjour\mdnsNSP.dll
+0x757f0000 - 0x7582b000 	C:\Windows\System32\mswsock.dll
+0x71fe0000 - 0x71fe8000 	C:\Windows\System32\winrnr.dll
+0x779d0000 - 0x77a19000 	C:\Windows\system32\WLDAP32.dll
+0x72000000 - 0x72006000 	C:\Windows\system32\rasadhlp.dll
+0x750a0000 - 0x750a5000 	C:\Windows\System32\wshtcpip.dll
+0x75160000 - 0x7519b000 	C:\Windows\system32\rsaenh.dll
+0x75d20000 - 0x75d3e000 	C:\Windows\system32\USERENV.dll
+0x6d610000 - 0x6d623000 	C:\Program Files\Java\jre6\bin\net.dll
+0x75850000 - 0x75855000 	C:\Windows\System32\wship6.dll
+0x6d560000 - 0x6d569000 	C:\Program Files\Java\jre6\bin\management.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:53214 -Dfile.encoding=Cp1252 
+java_command: ontology.Database
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_14\
+JRE_HOME=C:\Program Files\Java\jre6
+CLASSPATH=.;C:\Program Files\Java\jre6\lib\ext\QTJava.zip
+PATH=C:/Program Files/Java/jre6/bin/client;C:/Program Files/Java/jre6/bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Program Files\JavaFX\javafx-sdk1.2\bin;C:\Program Files\JavaFX\javafx-sdk1.2\emulator\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\TortoiseSVN\bin;C:\Program Files\NetBeans 6.7\java2\ant\bin;C:\Program Files\MATLAB\runtime\win32;C:\Program Files\MATLAB\bin;c:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\VisualSVN\bin;C:\Program Files\MySQL\MySQL Server 5.1\bin;C:\Program Files\QuickTime\QTSystem\;C:\MinGW\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live
+USERNAME=disbeat
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows Vista Build 6002 Service Pack 2
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 2097151k(900892k free), swap 4194303k(2488800k free)
+
+vm_info: Java HotSpot(TM) Client VM (14.3-b01) for windows-x86 JRE (1.6.0_17-b04), built on Oct 11 2009 00:52:06 by "java_re" with MS VC++ 7.1
+
+time: Thu Jan 14 04:45:16 2010
+elapsed time: 205 seconds
+
